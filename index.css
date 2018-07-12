@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: "helvetica neue",arial,sans-serif;
+}
+
+.container{
+    /* 设置每列宽度 */
+    -webkit-column-width: 240px;
+    -moz-column-width: 240px;
+    column-width: 240px;
+    margin: 0 auto;
+    padding:0 180px;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: #EEEEEE;
+    overflow: scroll;
+}
+
+.box{
+    padding: 15px 0 0 0;
+    /* 防止元素被一分为二到两列 */
+    -webkit-column-break-inside:avoid;
+}
+
+.pic{
+    background: white;
+    border: 1px solid #c2c2c2;
+    width: 240px;
+    box-shadow: 0 0 5px #c2c2c2;
+    font-size: 12px;
+    box-sizing: border-box
+}
+
+.pic img{
+    width: 238px;
+    height: auto;
+}
+
+.wfc{
+    -webkit-transition: left .3s ease-in-out,top .3s ease-in-out;
+}
+
+.intro p{
+    word-wrap:break-word;
+    line-height: 1.35em;
+    padding: 0 16px;
+    margin: 10px 0;
+}
+
+.good{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: url(images/good.png) no-repeat;
+    background-size: cover;
+    vertical-align:bottom;
+    margin-right: 2px;
+}
+
+.num{
+    color: #bfbfbf;
+    line-height: 15px;
+}
+
+.gapLine{
+    border-top: 1px solid #f1f1f1;
+}
+
+.avator img{
+    height: auto;
+    width: 34px;
+}
+
+.avator span{
+    margin-left: 4px;
+}
